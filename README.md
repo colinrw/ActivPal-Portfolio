@@ -22,7 +22,7 @@ Studentnummer: 17079578
 ## Introduction of the subject field
 ## Literature research
 ## Explanation of Terminology, jargon and definitions
-You can find all the Terminology, Jargon and Definitions [here](../Domain Knowledge/terminology_jargon_definitions.md).
+You can find all the Terminology, Jargon and Definitions [here](../Domain Knowledge/).
 
 # Data preprocessing
 ## Data exploration
