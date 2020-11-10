@@ -1,2 +1,36 @@
-# ActivPal-Portfolio
-The Hague University of Applied Science - Data Science Minor - ActivPal Portfolio
+# ActivPal Portfolio - Data Science Minor 
+Door: Colin Werkhoven 
+
+Studentnummer: 17079578
+
+# Datacamp
+
+# Research project
+## Task definition
+## Evaluation
+## Conclusions
+## Planning
+
+# Predictive Analytics
+## Selecting a Model
+## Configuring a Model
+## Training model
+## Evaluating a model
+## Visualizing the outcome of a model
+
+# Domain knowledge
+## Introduction of the subject field
+## Literature research
+## Explanation of Terminology, jargon and definitions
+You can find all the Terminology, Jargon and Definitions [here](../Domain Knowledge/terminology_jargon_definitions.md).
+
+# Data preprocessing
+## Data exploration
+## Data cleansing
+## Data preparation
+## Data explanation
+## Data visualization(exploratory)
+
+# Communication
+## Presentations
+## Writing paper
