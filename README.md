@@ -20,9 +20,11 @@ Studentnummer: 17079578
 
 # Domain knowledge
 ## Introduction of the subject field
+You can find the introduction of the subject field [here](Domain%20Knowledge/introduction_subject_field.md).
 ## Literature research
+You can find all the Literature research [here](Domain%20Knowledge/literature_research.md).
 ## Explanation of Terminology, jargon and definitions
-You can find all the Terminology, Jargon and Definitions [here](../Domain Knowledge/terminology_jargon_definitions.md).
+You can find all the Terminology, Jargon and Definitions [here](Domain%20Knowledge/terminology_jargon_definitions.md).
 
 # Data preprocessing
 ## Data exploration
