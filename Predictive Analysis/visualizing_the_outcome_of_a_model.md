@@ -1,3 +1,3 @@
 # Visualizing the outcome of a model
 
-[<  Go Back](../README.md)
+[< Evaluating a model](evaluating_a_model.md)  — [README >](../README.md)

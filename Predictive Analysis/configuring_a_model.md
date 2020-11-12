@@ -1,3 +1,3 @@
 # Configuring a model
 
-[<  Go Back](../README.md)
+[<  Selecting a model](selecting_a_model.md) — [Training a model >](training_a_model.md) 

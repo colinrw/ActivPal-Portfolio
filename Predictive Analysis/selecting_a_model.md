@@ -1,3 +1,3 @@
 # Selecting a model
 
-[<  Go Back](../README.md)
+[<  README](../README.md) — [Configuring a model >](configuring_a_model.md) 
