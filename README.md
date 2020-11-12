@@ -34,12 +34,12 @@ Progress in DataCamp can be found [here]().
 - [Explanation of Terminology, jargon and definitions](Domain%20Knowledge/terminology_jargon_definitions.md)
 
 # Data preprocessing
-- [Data exploration]()
-- [Data cleansing]()
-- [Data preparation]()
-- [Data explanation]()
-- [Data visualization (exploratory)]()
+- [Data exploration](Data%20Preprocessing/data_exploration.md)
+- [Data cleansing](Data%20Preprocessing/data_cleaning.md)
+- [Data preparation](Data%20Preprocessing/data_preparation.md)
+- [Data explanation](Data%20Preprocessing/data_explanation.md)
+- [Data visualization (exploratory)](Data%20Preprocessing/data_visualization.md)
 
 # Communication
-- [Presentations]()
-- [Writing paper]()
+- [Presentations](Communication/presentations.md)
+- [Writing paper](Communication/writing_paper.md)
