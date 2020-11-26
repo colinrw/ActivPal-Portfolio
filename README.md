@@ -13,7 +13,7 @@ Studentnumber: 17079578
 Add general introduction about the project.
 
 # Datacamp
-Progress in DataCamp can be found [here]().
+Progress in DataCamp can be found [here](Images/datacamp-progress-colin-werkhoven.PNG).
 
 # Research project
 - [Task definition](Research%20Project/task_definition.md)
