@@ -16,7 +16,7 @@ The Random Forest model is a decision tree model which can both be used for Regr
 
 Random Forest is a possible model for our issue since it can be used for regression and the Random Forest decision tree method tries different trees to find the optimal results. 
 
-##### Ridge Regression ([source (1)](https://www.statisticshowto.com/ridge-regression/#:~:text=Ridge%20regression%20is%20a%20way,(correlations%20between%20predictor%20variables)), [source (2)](quora.com/What-are-the-benefits-of-using-ridge-regression-over-ordinary-linear-regression))
+##### Ridge Regression ([source (1)](https://www.statisticshowto.com/ridge-regression/#:~:text=Ridge%20regression%20is%20a%20way,(correlations%20between%20predictor%20variables)), [source (2)](https://www.quora.com/What-are-the-benefits-of-using-ridge-regression-over-ordinary-linear-regression))
 Another Model I've looked into was the Ridge Regression Model. The Ridge Model minimizes the square error of the model, but this Model is based on `Multicollinearity`. This means one value can be predicted with another value. These 2 values have a correlation between each other.  
 
 With the current issue of predicting the MET value with the X, Y and Z data it should not be possible to predict the next value based on the previous value. Therefor the Ridge Regression is not a suitable candidate for our MET recognition model.   
