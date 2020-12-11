@@ -9,6 +9,7 @@ Studentnumber: 17079578
 - Add plots with `grid`, `markers` and `units`.
 - Check dead links.
 - Write compact, try to get the portfolio as small as possible.
+- Add notes to visualization to make clear what it is showing.
 
 # Introduction
 
