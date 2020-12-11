@@ -7,6 +7,8 @@ Studentnumber: 17079578
 
 - Show plots in the markdown directly instead of having to click to see the plots.
 - Add plots with `grid`, `markers` and `units`.
+- Check dead links.
+- Write compact, try to get the portfolio as small as possible.
 
 # Introduction
 
