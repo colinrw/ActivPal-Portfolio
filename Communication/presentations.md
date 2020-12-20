@@ -3,7 +3,7 @@ In this chapter I will describe which presentations I've contributed to and whic
 Since the content of the first 5 presentations was not that useful and informative I decided to leave them out of here. 
 
 
-#### Presentation #6 (pdf file)[]
+#### Presentation #6 — [pdf file](../Images/Presentation 6)
 
 Slides 7 + 10
 
