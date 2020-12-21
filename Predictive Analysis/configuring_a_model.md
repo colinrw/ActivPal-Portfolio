@@ -17,8 +17,8 @@ We decided to use `random_state=0` for all our MET prediction models. This way a
 
 <details> <summary>Feature Selection</summary>
 
-After [preparing the MET prediction model dataframe](../Data%20Preprocessing/data_preparation.md) with different features we thought it would take a long time to try all possible variations. Therefor, we wanted to use Recursive Feature Selection [(RFE)](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html). 
-RFE picks a combination with the best scoring features. The chosen features were used in the configuration of the Random Forest or XGBoost model. 
+After [preparing the MET prediction model dataframe](../Data%20Preprocessing/data_preparation.md) with different features I thought it would take a long time to try all possible variations. Therefor, I wanted to use Recursive Feature Selection [(RFE)](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html). 
+RFE picks a combination with the best scoring features. The chosen features were used in the configuration of the Random Forest or XGBoost model. This automated approach would save us lots of time, since we needed to find features for 6 different activities and 2 different models.   
 
 <details><summary>List of features for Feature Selection</summary>
 
@@ -42,9 +42,22 @@ RFE picks a combination with the best scoring features. The chosen features were
 
 <details> <summary>Picking the best number of trees</summary>
 
-Text here
+The `n_estimators` parameter is an important configuration for all tree based models. Every number of tree results in a different outcome. I wanted to find the best number of trees, but doing this by hand was gonna take way too long. Therefor I decided to write a function that finds the optimal number of trees between a certain range. 
+In our case we picked a range between 1-210. After analyzing the plots, the results were not getting higher with a larger number of trees around 200. 
 
-Text here
+<details><summary>Finding optimal number of trees function</summary>
+
+The result from this function was used during the configuration of the models for the `n_estimators` parameter.
+
+![](../Images/predictive-analysis/n_estimator_function.PNG)
+
+</details>
+
+<details><summary>Results of the optimal number of trees function</summary>
+
+![](../Images/predictive-analysis/n_estimators_results_plot.PNG)
+
+</details>
 
 </details>
 
