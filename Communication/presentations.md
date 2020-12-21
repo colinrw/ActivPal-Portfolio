@@ -8,13 +8,13 @@ Since the content of the first 5 presentations was not that useful and informati
 My contributions for Presentation #6
 <details> <summary>Slide 7</summary>
 
-[Slide 7](https://github.com/colinrw/ActivPal-Portfolio/blob/main/Images/Presentations/presentation-6-page-7.PNG)
+![Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
 
-[Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
 </details>
 
-<details> <summary>Slide </summary>
-    
+<details> <summary>Slide 10</summary>
+
+![Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
 </details>
 
 #### Presentation #7
