@@ -8,7 +8,7 @@ In the previous chapter we've picked 2 possible Regression models, Random Forest
 <details> <summary>Random State</summary>
 Picking a `random state` is essential for the configurations of your models. Without a `random_state`, the model will always apply a random, new variation of decision trees. To get accurate predictions and results it is important to always have the same decision trees. 
 
-We decided to use `random_state=0` for all our MET prediction models. This way all models would have consistency in the configurations and results could not get manipulated by trying out different random state values. The decision for `random_state=0` is found [here](https://scikit-learn.org/stable/glossary.html#term-random-state). 
+We decided to use `random_state=0` for all our MET prediction models. This way all models would have consistency in the configurations and results could not get manipulated by trying out different random state values. The decision for `random_state=0` is found <a href="https://scikit-learn.org/stable/glossary.html#term-random-state" target="_blank">here</a> [here](https://scikit-learn.org/stable/glossary.html#term-random-state). 
 
 </details>
 
