@@ -17,8 +17,15 @@ We decided to use `random_state=0` for all our MET prediction models. This way a
 After [preparing the MET prediction model dataframe](../Data%20Preprocessing/data_preparation.md) with different features we thought it would take a long time to try all possible variations. Therefor, we wanted to use Recursive Feature Selection [(RFE)](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html). 
 RFE picks a combination with the best scoring features. The chosen features were used in the configuration of the Random Forest or XGBoost model. 
 
-<details><summary>Feature Selection</summary>
-Test image here
+<details><summary>List of features for Feature Selection</summary>
+
+![All features](../Images/predictive-analysis/list_of_features.PNG)
+
+</details>
+
+<details><summary>Feature Selection Function</summary>
+
+![](../Images/predictive-analysis/feature_selection_function.PNG)
 </details>
 
 
