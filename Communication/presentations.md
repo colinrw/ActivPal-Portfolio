@@ -5,7 +5,7 @@ Since the content of the first 5 presentations was not that useful and informati
 
 #### Presentation #6 — [here](../).
 
-
+[Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
 My contributions for Presentation #6
 <details> <summary>Slide 7</summary>
 [Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
