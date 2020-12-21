@@ -55,6 +55,8 @@ The result from this function was used during the configuration of the models fo
 
 <details><summary>Results of the optimal number of trees function</summary>
 
+More on the visualisation of this plot can be found in the [visualizing the outcome of a model chapter](visualizing_the_outcome_of_a_model.md).
+
 ![](../Images/predictive-analysis/n_estimators_results_plot.PNG)
 
 </details>
