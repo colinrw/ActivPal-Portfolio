@@ -6,25 +6,82 @@ Since the content of the first 5 presentations was not that useful and informati
 #### Presentation #6 — [pdf file](../Images/Presentation Week 6.pdf)
 My contributions for Presentation #6
 <details> <summary>Slide 7</summary>
+    Progress in DataCamp can be found [here](Images/datacamp-progress-colin-werkhoven.PNG).
     ![Slide 7](../Images/Presentations/presentation-6-page-7)
+</details>
+
+<details> <summary>Slide </summary>
+    
+</details>
+
+#### Presentation #7
+My contributions for Presentation #7
+<details> <summary>Slide 7</summary>
+    [Slide 7]()
 </details>
 
 <details> <summary>Slide 10</summary>
     
 </details>
 
-#### Presentation #7
-
 #### Presentation #8
+My contributions for Presentation #8
+<details> <summary>Slide 7</summary>
+    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+</details>
+
+<details> <summary>Slide </summary>
+    
+</details>
 
 #### Presentation #9
+My contributions for Presentation #9
+<details> <summary>Slide 7</summary>
+    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+</details>
+
+<details> <summary>Slide </summary>
+    
+</details>
 
 #### Presentation #10
+My contributions for Presentation #10
+<details> <summary>Slide 7</summary>
+    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+</details>
+
+<details> <summary>Slide </summary>
+    
+</details>
 
 #### Presentation #11
+My contributions for Presentation #11
+<details> <summary>Slide 7</summary>
+    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+</details>
+
+<details> <summary>Slide </summary>
+    
+</details>
 
 #### Presentation #12
+My contributions for Presentation #12
+<details> <summary>Slide 7</summary>
+    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+</details>
+
+<details> <summary>Slide </summary>
+    
+</details>
 
 #### Presentation #13
+My contributions for Presentation #13
+<details> <summary>Slide 7</summary>
+    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+</details>
+
+<details> <summary>Slide </summary>
+    
+</details>
 
 [<  Go Back](../README.md)
