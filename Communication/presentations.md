@@ -3,12 +3,13 @@ In this chapter I will describe which presentations I've contributed to and whic
 Since the content of the first 5 presentations was not that useful and informative I decided to leave them out of here. 
 
 
-#### Presentation #6 — [here](../).
+#### Presentation #6 — 
 
-[Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
 My contributions for Presentation #6
 <details> <summary>Slide 7</summary>
-[Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
+
+[Slide 7](https://github.com/colinrw/ActivPal-Portfolio/blob/main/Images/Presentations/presentation-6-page-7.PNG)
+
 [Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
 </details>
 
