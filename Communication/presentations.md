@@ -4,8 +4,14 @@ Since the content of the first 5 presentations was not that useful and informati
 
 
 #### Presentation #6 — [pdf file](../Images/Presentation Week 6.pdf)
+My contributions for Presentation #6
+<details> <summary>Slide 7</summary>
+    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+</details>
 
-Slides 7 + 10
+<details> <summary>Slide 10</summary>
+    
+</details>
 
 #### Presentation #7
 
