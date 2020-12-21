@@ -2,7 +2,7 @@
 
 ### Introduction
 
-In the previous chapter we've picked 2 possible Regression models, Random Forest and XGBoost. I will discuss the configurations for both models here. Both models have almost the same configurations, I will therefor explain the configurations once. Here you can find a list of configurations that were applied by the configuration to both models. 
+In the previous chapter we've picked 2 possible Regression models, Random Forest and XGBoost. I will discuss the configurations for both models here. Both models have almost the same configurations, I will therefor explain the configurations once. Here you can find a list of configurations that were applied by the configuration of both models. 
 
 ---
 
@@ -67,9 +67,17 @@ More on the visualisation of this plot can be found in the [visualizing the outc
 
 <details> <summary>Hyperparameter Tuning</summary>
 
-Text here
+##### What is Hyperparameter tuning?
 
-Text here
+Hyperparameter tuning is finding the best combination of parameters for your Machine Learning model. 
+
+Once the optimal amount of features and number of trees were selected it was time to improve the models even more. My colleague Adnan Akbas pointed me towards `Hyperparameter Tuning`.
+
+Since the Random Forest and XGBoost models have some different configurations, I searched which parameters were usually tuned for each model. 
+
+##### Parameters for the Random Forest model 
+
+
 
 </details>
 
