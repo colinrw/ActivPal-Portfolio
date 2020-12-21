@@ -2,8 +2,8 @@
 
 ### Introduction
 
-In the previous chapter we've picked 2 possible Regression models, Random Forest and XGBoost. I will discuss the configurations for both models here. Both models have almost the same configurations, I will therefor explain the configurations once. 
-Here you can find a list of configurations that were applied by the configuration to both models. 
+In the previous chapter we've picked 2 possible Regression models, Random Forest and XGBoost. I will discuss the configurations for both models here. Both models have almost the same configurations, I will therefor explain the configurations once. Here you can find a list of configurations that were applied by the configuration to both models. 
+
 ---
 
 <details> <summary>Random State</summary>
