@@ -16,74 +16,125 @@ My contributions for Presentation #6
 ![Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
 </details>
 
-#### Presentation #7
+#### [Presentation #7 — PDF](../)
+
 My contributions for Presentation #7
+<details> <summary>Slide 4</summary>
+
+![Slide 4](../Images/Presentations/presentation-6-page-7.PNG)
+
+</details>
+
+#### [Presentation #8 — PDF](../Images/Presentation%20Week%206.pdf)
+
+My contributions for Presentation #8
 <details> <summary>Slide 7</summary>
-    [Slide 7]()
+
+![Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
+
 </details>
 
 <details> <summary>Slide 10</summary>
-    
+
+![Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
 </details>
 
-#### Presentation #8
-My contributions for Presentation #8
-<details> <summary>Slide 7</summary>
-    ![Slide 7](../Images/Presentations/presentation-6-page-7)
-</details>
+#### [Presentation #9 — PDF](../Images/Presentation%20Week%206.pdf)
 
-<details> <summary>Slide </summary>
-    
-</details>
-
-#### Presentation #9
 My contributions for Presentation #9
 <details> <summary>Slide 7</summary>
-    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+
+![Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
+
 </details>
 
-<details> <summary>Slide </summary>
-    
+<details> <summary>Slide 10</summary>
+
+![Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
 </details>
 
-#### Presentation #10
+#### [Presentation #10 — PDF](../Images/Presentation%20Week%206.pdf)
+
 My contributions for Presentation #10
 <details> <summary>Slide 7</summary>
-    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+
+![Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
+
 </details>
 
-<details> <summary>Slide </summary>
-    
+<details> <summary>Slide 10</summary>
+
+![Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
 </details>
 
-#### Presentation #11
+#### [Presentation #11 — PDF](../Images/Presentation%20Week%206.pdf)
+
 My contributions for Presentation #11
 <details> <summary>Slide 7</summary>
-    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+
+![Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
+
 </details>
 
-<details> <summary>Slide </summary>
-    
+<details> <summary>Slide 10</summary>
+
+![Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
 </details>
 
-#### Presentation #12
+#### [Presentation #12 — PDF](../Images/Presentation%20Week%206.pdf)
+
 My contributions for Presentation #12
 <details> <summary>Slide 7</summary>
-    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+
+![Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
+
 </details>
 
-<details> <summary>Slide </summary>
-    
+<details> <summary>Slide 10</summary>
+
+![Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
 </details>
 
-#### Presentation #13
+#### [Presentation #13 — PDF](../Images/Presentation%20Week%206.pdf)
+
 My contributions for Presentation #13
 <details> <summary>Slide 7</summary>
-    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+
+![Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
+
 </details>
 
-<details> <summary>Slide </summary>
-    
+<details> <summary>Slide 10</summary>
+
+![Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
+</details>
+
+#### [Presentation #14 — PDF](../Images/Presentation%20Week%206.pdf)
+
+My contributions for Presentation #14
+<details> <summary>Slide 7</summary>
+
+![Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
+
+</details>
+
+<details> <summary>Slide 10</summary>
+
+![Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
+</details>
+
+#### [Presentation #15 — PDF](../Images/Presentation%20Week%206.pdf)
+
+My contributions for Presentation #15
+<details> <summary>Slide 7</summary>
+
+![Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
+
+</details>
+
+<details> <summary>Slide 10</summary>
+
+![Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
 </details>
 
 [<  Go Back](../README.md)
