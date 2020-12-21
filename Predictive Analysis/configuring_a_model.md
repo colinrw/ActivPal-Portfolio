@@ -8,15 +8,19 @@ In the previous chapter we've picked 2 possible Regression models, Random Forest
 <details> <summary>Random State</summary>
 Picking a `random state` is essential for the configurations of your models. Without a `random_state`, the model will always apply a random, new variation of decision trees. To get accurate predictions and results it is important to always have the same decision trees. 
 
-We decided to use `random_state=0` for all our MET prediction models. This way all models would have consistency in the configurations and results could not get manipulated by trying out different random state values. The decision for `random_state=0` is found <a href="https://scikit-learn.org/stable/glossary.html#term-random-state" target="_blank">here</a> [here](https://scikit-learn.org/stable/glossary.html#term-random-state). 
+We decided to use `random_state=0` for all our MET prediction models. This way all models would have consistency in the configurations and results could not get manipulated by trying out different random state values. The decision for `random_state=0` is found [here](https://scikit-learn.org/stable/glossary.html#term-random-state). 
 
 </details>
 
 <details> <summary>Feature Selection</summary>
 
-Text here
+After [preparing the MET prediction model dataframe](../Data%20Preprocessing/data_preparation.md) with different features we thought it would take a long time to try all possible variations. Therefor, we wanted to use Recursive Feature Selection [(RFE)](https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.RFE.html). 
+RFE picks a combination with the best scoring features. The chosen features were used in the configuration of the Random Forest or XGBoost model. 
 
-Text here
+<details><summary>Feature Selection</summary>
+Test image here
+</details>
+
 
 </details>
 
