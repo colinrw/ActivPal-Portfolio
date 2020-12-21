@@ -2,8 +2,7 @@
 In this chapter I will describe which presentations I've contributed to and which I presented.
 Since the content of the first 5 presentations was not that useful and informative I decided to leave them out of here. 
 
-
-#### Presentation #6 — 
+#### [Presentation #6 — PDF](../Images/Presentation%20Week%206.pdf)
 
 My contributions for Presentation #6
 <details> <summary>Slide 7</summary>
