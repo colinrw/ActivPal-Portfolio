@@ -22,7 +22,7 @@ RFE picks a combination with the best scoring features. The chosen features were
 
 <details><summary>List of features for Feature Selection</summary>
 
-![All features](../Images/predictive-analysis/list_of_features.PNG)
+![](../Images/predictive-analysis/list_of_features.PNG)
 
 </details>
 
@@ -31,6 +31,10 @@ RFE picks a combination with the best scoring features. The chosen features were
 ![](../Images/predictive-analysis/feature_selection_function.PNG)
 </details>
 
+<details><summary>Example results of Feature Selection</summary>
+
+![](../Images/predictive-analysis/feature_selection_results.PNG)
+</details>
 
 </details>
 
