@@ -4,10 +4,12 @@ Since the content of the first 5 presentations was not that useful and informati
 
 
 #### Presentation #6 — [pdf file](../Images/Presentation Week 6.pdf)
+
+
 My contributions for Presentation #6
 <details> <summary>Slide 7</summary>
-    Progress in DataCamp can be found [here](Images/datacamp-progress-colin-werkhoven.PNG).
-    ![Slide 7](../Images/Presentations/presentation-6-page-7)
+[Slide 7](../Images/Presentations/presentation-6-page-7.PNG)
+[Slide 10](../Images/Presentations/presentation-6-page-10.PNG)
 </details>
 
 <details> <summary>Slide </summary>
