@@ -2,7 +2,11 @@
 In this chapter I will describe which presentations I've contributed to and which I presented.
 Since the content of the first 5 presentations was not that useful and informative I decided to leave them out of here. 
 
+During this Applied Data Science Minor, I've presented 2 presentations and contributed in almost every presentation.
+
 #### [Presentation #6 — PDF](../Images/Presentation%20Week%206.pdf)
+
+Presentation #6 was presented by myself. 
 
 My contributions for Presentation #6
 <details> <summary>Slide 7</summary>
@@ -49,6 +53,8 @@ My contributions for Presentation #9
 </details>
 
 #### [Presentation #10 — PDF](../Images/Presentation%20Week%2010.pdf)
+
+Presentation #10 was presented together with my colleague Mark Boon.
 
 My contributions for Presentation #10
 <details> <summary>Slide 6</summary>
