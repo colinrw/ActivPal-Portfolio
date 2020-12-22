@@ -12,7 +12,13 @@ Throughout the implementation of the MET prediction model we've encountered mult
 
 <details><summary>Removing Irrelevent Features</summary>
 
-text
+Removing Irrelevent or high correlating features was also used to prevent overfitting. Take the feature Body Mass Index (BMI) for example. This feature was created from the length and weight of the respondent. After analyzing the feature correlation heatmap I found that weight had a very high correlation with BMI. I decided to pick either length and weight or BMI. The final decision was to remove BMI as a feature.
+
+<details><summary>Feature Correlation Heatmap</summary>
+
+![](../Images/predictive-analysis/heatmap-walking-prediction.PNG)
+
+</details> 
 
 </details>
 
