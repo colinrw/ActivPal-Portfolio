@@ -69,13 +69,13 @@ More on the visualisation of this plot can be found in the [visualizing the outc
 
 Once the optimal amount of features and number of trees were selected it was time to improve the models even more. My colleague Adnan Akbas pointed me towards `Hyperparameter Tuning`.
 
-##### What is Hyperparameter Tuning?
+## What is Hyperparameter Tuning?
 
 Hyperparameter tuning is finding the best combination of parameters for your Machine Learning model. 
 
 Since the Random Forest and XGBoost models have different configurations, I searched which parameters were usually tuned for each model. 
 
-### Hypertuning the Random Forest model 
+## Hypertuning the Random Forest model 
 
 [Random Forest Hyperparameter Tuning Source](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74)
 
@@ -95,7 +95,7 @@ The parameters were applied on a new model with the following function. The func
 
 </details>
 
-### Hypertuning the XGBoost model 
+## Hypertuning the XGBoost model 
 
 [XGBoost Hyperparameter Tuning Source](https://towardsdatascience.com/doing-xgboost-hyper-parameter-tuning-the-smart-way-part-1-of-2-f6d255a45dde)
 
@@ -107,7 +107,7 @@ These parameters were applied with all possible combinations on a new `XGBRegres
 
 </details>
 
-##### GridSearch vs. RandomizedSearch
+#### GridSearch vs. RandomizedSearch
 
 These parameters were applied on a `GridSearchCV` and `RandomizedSearchCV` model. I decided to try 2 different search methods to see which one performed better. 
 
