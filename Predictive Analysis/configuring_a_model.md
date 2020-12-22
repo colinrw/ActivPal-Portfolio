@@ -109,7 +109,7 @@ These parameters were applied with all possible combinations on a new `XGBRegres
 
 #### GridSearch vs. RandomizedSearch
 
-These parameters were applied on a `GridSearchCV` and `RandomizedSearchCV` model. I decided to try 2 different search methods to see which one performed better. 
+These parameters were applied on a `XGBRegressor` in combination with `GridSearchCV` and `RandomizedSearchCV`. I decided to try 2 different search methods to see which one performed better. 
 
 <details><summary>GridSearch Function</summary>
 
@@ -122,6 +122,8 @@ These parameters were applied on a `GridSearchCV` and `RandomizedSearchCV` model
 ![](../Images/predictive-analysis/xgboost_randomizedsearch_function.PNG)
 
 </details>
+
+The results of the different Search methods were compared to each other to find the best performing method for the XGBoost model.
 
 </details>
 
