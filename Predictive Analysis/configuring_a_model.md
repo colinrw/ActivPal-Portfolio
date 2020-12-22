@@ -53,6 +53,16 @@ The result from this function was used during the configuration of the models fo
 
 </details>
 
+<details><summary>Profound Explanation of optimal number of trees Approach</summary>
+
+To find the most optimal amount I created a function called `optimal_amount_estimators`. 
+This function contains a for loop that creates a new model every loop, trains this model and calculates a R Squared score. All these scores are added to a Dictionary. I picked a dictionary since we need an integer value which will be the optimal estimator. The key from this dictionary will be the optimal estimator. Once the dictionary is filled we simply pick the `max` value from the dictionary and return the associated key value from the max R Squared score. 
+
+Here is an example of how this dictionary looks like. In this case Key 18 gives the highest R Squared score. Therefor we return the key that is associated to the highest score and use this as our `n_estimator`.
+![](../Images/predictive-analysis/dictionary-example.PNG)
+
+</details>
+
 <details><summary>Results of the optimal number of trees function</summary>
 
 More on the visualisation of this plot can be found in the [visualizing the outcome of a model chapter](visualizing_the_outcome_of_a_model.md).
@@ -123,7 +133,7 @@ These parameters were applied on a `XGBRegressor` in combination with `GridSearc
 
 </details>
 
-The results of the different Search methods were compared to each other to find the best performing method for the XGBoost model.
+The results of the different Search methods were compared to each other to find the best performing method for the XGBoost model. The results of both methods can be found in the [Evaluating a model](evaluating_a_model.md) chapter.
 
 </details>
 
