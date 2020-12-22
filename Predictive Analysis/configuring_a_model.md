@@ -75,7 +75,7 @@ Hyperparameter tuning is finding the best combination of parameters for your Mac
 
 Since the Random Forest and XGBoost models have different configurations, I searched which parameters were usually tuned for each model. 
 
-##### Parameters for the Random Forest model 
+### Hypertuning the Random Forest model 
 
 [Random Forest Hyperparameter Tuning Source](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74)
 
@@ -95,10 +95,36 @@ The parameters were applied on a new model with the following function. The func
 
 </details>
 
+### Hypertuning the XGBoost model 
 
+[XGBoost Hyperparameter Tuning Source](https://towardsdatascience.com/doing-xgboost-hyper-parameter-tuning-the-smart-way-part-1-of-2-f6d255a45dde)
 
+<details><summary>Here is a list of parameters and possible values that were tuned for the XGBoost model</summary>
 
+These parameters were applied with all possible combinations on a new `XGBRegressor` model. 
+
+![](../Images/predictive-analysis/hyperparametertuning_xgboost.PNG)
 
 </details>
+
+##### GridSearch vs. RandomizedSearch
+
+These parameters were applied on a `GridSearchCV` and `RandomizedSearchCV` model. I decided to try 2 different search methods to see which one performed better. 
+
+<details><summary>GridSearch Function</summary>
+
+![](../Images/predictive-analysis/xgboost_gridsearch_function.PNG)
+
+</details>
+
+<details><summary>RandomizedSearch Function</summary>
+
+![](../Images/predictive-analysis/xgboost_randomizedsearch_function.PNG)
+
+</details>
+
+</details>
+
+---
 
 [<  Selecting a model](selecting_a_model.md) — [Training a model >](training_a_model.md) 
