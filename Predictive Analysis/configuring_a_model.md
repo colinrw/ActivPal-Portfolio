@@ -67,15 +67,30 @@ More on the visualisation of this plot can be found in the [visualizing the outc
 
 <details> <summary>Hyperparameter Tuning</summary>
 
-##### What is Hyperparameter tuning?
+Once the optimal amount of features and number of trees were selected it was time to improve the models even more. My colleague Adnan Akbas pointed me towards `Hyperparameter Tuning`.
+
+##### What is Hyperparameter Tuning?
 
 Hyperparameter tuning is finding the best combination of parameters for your Machine Learning model. 
-
-Once the optimal amount of features and number of trees were selected it was time to improve the models even more. My colleague Adnan Akbas pointed me towards `Hyperparameter Tuning`.
 
 Since the Random Forest and XGBoost models have some different configurations, I searched which parameters were usually tuned for each model. 
 
 ##### Parameters for the Random Forest model 
+
+[Random Forest Hyperparameter Tuning Source](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74)
+
+<details><summary>Here is a list of parameters and possible values that were tuned for the Random Forest model.</summary>
+
+These parameters were applied with all possible combinations on a new `RandomForestRegressor` model. 
+
+![](../Images/predictive-analysis/hyperparametertuning_randomforest.PNG)
+
+
+</details>
+
+
+
+
 
 
 
