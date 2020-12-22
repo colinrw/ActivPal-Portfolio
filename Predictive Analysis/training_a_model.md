@@ -37,9 +37,9 @@ The noise for the MET prediction models were usually respondents who weren't abl
 
 </details>
 
----
-
 </details>
+
+---
 
 <details><summary>First Run Training</summary>
 
