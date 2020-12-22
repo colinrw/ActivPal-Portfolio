@@ -22,8 +22,6 @@ Removing Irrelevent or high correlating features was also used to prevent overfi
 
 </details>
 
---- 
-
 <details><summary>Creating Relevent Features</summary>
 
 After struggling for a while and not getting higher correlations for the MET prediction models I thought about adding new relevant features. The speed of the respondent made sense in our case. Running or walking faster means you use more energy which results in a higher MET production. 
