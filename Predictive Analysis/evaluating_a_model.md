@@ -41,16 +41,24 @@ Picking a fitting model for each activity was the final step once Cross Validati
 - `R^2  score after applying the test data set` 
 - `Mean Squared Error (MSE) score after applying the test data set` 
 
-Activity|Random Forest|Random Forest Test|XGBoost|XGBoost Test|
-        |R Squared Score|Cross Validation|	R^2	|MSE	|R Squared Score| Cross Validation	|R^2	|MSE
-        
-Walking	0.40 (+/- 0.15)	0.40	0.65	0.32 (+/- 0.12)	0.29	0.70
-Running	0.60 (+/- 0.20)	0.58	1.57	0.63 (+/- 0.15)	0.45	1.80
-Cycling Light	0.41 (+/- 0.28)	-0.70	1.78	0.41 (+/- 0.23)	-1.03	1.95
-Cycling Heavy	-0.39 (+/- 1.18)	0.02	1.67	0.12 (+/- 0.59)	-0.08	1.23
-Standing	-0.54 (+/- 0.55)	-0.02	0.38	-0.85 (+/- 0.78)	0.36	0.30
-Sitting	-0.23 (+/- 0.41)	-0.05	0.37	-0.17 (+/- 0.42)	-0.24	0.40
+<details><summary>Show Table</summary>
 
+After evaluating the scores for both models we, as a team, picked the best scoring model for each activity. The models we picked are marked in green in the table bellow.
+
+As you can see, `Standing` and `Sitting` are not marked. The reason for this is that we decided to leave the predictions for both out of the experiment since they would not impact the result of the main question. This has been agreed in consulation with Annemieke van Leuten and John Bolte from Centraal Bureau of Statistiek (CBS).
+
+![](../Images/predictive-analysis/xgboost_vs_randomforest_results2.PNG)
+
+### Final Results
+
+|Activity|Model|
+|------------|---------|
+|Walking|Random Forest|
+|Running|Random Forest|
+|Cycling Light|Random Forest|
+|Cycling Heavy|XGBoost|
+
+</details>
 
 </details>
 
