@@ -39,28 +39,4 @@ The noise for the MET prediction models were usually respondents who weren't abl
 
 ---
 
-<details><summary>First Run Training</summary>
-
-text
-
-</details>
-
----
-
-<details><summary>Cross Validation Training</summary>
-
-text
-
-</details>
-
----
-
-<details><summary>Applying Test Dataset</summary>
-
-text
-
-</details>
-
----
-
 [<  Configuring a model](configuring_a_model.md) — [Evaluating a model >](evaluating_a_model.md) 
