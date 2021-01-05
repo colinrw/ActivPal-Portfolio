@@ -4,7 +4,7 @@ This project is a collaboration between The Hague University of Applied Sciences
 
 <details><summary>Introduction</summary>
 
-Statistic Netherlands wants to know if it's possible to measure if respondents meet the proposed 150 minutes of moderate intense activities within a week. The current method of collecting information from respondents is asking questions with different surveys. This comes with issues, one of them is that respondents don't always know the exact answers and this results in inaccurate results. Therefore, CBS decided to invite 40 random respondents to participate in this experiment. Every respondent received an activPAL device and had it mounted on their upper thigh. This activPAL device measured different types of data which has to be used to answer the following research questions. 
+Statistic Netherlands wants to know if it's possible to measure if respondents meet the proposed 150 minutes of moderate intense physical activities within a week. The current method of collecting information from respondents is asking questions with different surveys. This comes with issues, one of them is that respondents don't always know the exact answers and this results in inaccurate results. Therefore, CBS decided to invite 40 random respondents to participate in this experiment. Every respondent received an activPAL device and had it mounted on their upper thigh. This activPAL device measured different types of data which has to be used to answer the following research questions. 
 
 </details>
 

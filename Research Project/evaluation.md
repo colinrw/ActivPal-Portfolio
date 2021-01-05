@@ -1,10 +1,6 @@
 # Evaluation
 
-<details><summary>Introduction</summary>
-
 During this project it was not possible to execute all experiments. Different causes were, not enough knowledge, time or data. This chapter contains different subjects for future research. 
-
-</details>
 
 ---
 
@@ -20,16 +16,42 @@ For future research on this topic I recommend more data. One of the main reasons
 
 ---
 
+<details><summary>Removing Low Variance Features</summary>
 
+While creating the features for the MET prediction models we picked the most logical features from the `respondenten.csv` file (this file contains different characteristics of all participating respondents) that was provided by CBS, but the most logical is not always the most optimal.
 
-Write decisions that aren't discussed with teachers 
+##### Recommendation
 
-How data is prepared
+My recommendation for the MET models is to remove low variance Features. The cause of the overfitting MET models could be having low variance features. The models could improve (or worsen) once the low variance features are removed from the models.  
 
-How cross validation is applied
+</details>
 
-Removing low variance features
+---
 
+<details><summary>Speed Calculation Formula</summary>
 
+One of the features for our MET models was `speed`. This feature improved the scores of the models tremendously, but we are not 100% sure if the calculations are correctly implemented since none of our group members has a mathematical background. 
 
-[<  Task Definition](task_definition.md) — [Conclusions >](conclusions.md) 
+##### Recommendation
+
+Let someone with a mathematical background implement the speed calculation correctly and see what this does to the results of the MET models.
+
+</details>
+
+---
+
+<details><summary>More Detailed Cross Validation Approach</summary>
+
+Myself applied Cross Validation on the MET models. If I had more time to work on this I would go for a more detailed approach. 
+
+I started very late with applying Cross Validation and was therefore not able to try and analyse more possible options. 
+
+##### Recommendation
+
+Start applying Cross Validation and K-fold Cross Validation directly after generating the first scores instead of almost at the end of the experiments. 
+
+</details>
+
+---
+
+[< Task Definition](task_definition.md) — [Conclusions >](conclusions.md) 
