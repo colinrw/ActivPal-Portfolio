@@ -17,8 +17,8 @@ This heatmap was used to see which features were low or high correlated to the `
 
 <details><summary>Finding optimal n_estimators — Line Chart</summary>
 
-The following visualization displays the scores from a certain range. I wanted to find the best amount of iterations for this model. In some cases the `n_estimator` value of 2 gave the best results, this would be unlikely so I decided to start from 10 instead of 1.
-At first the amount of iterations was set to 100, but after analysing the results I saw that the scores were going up around the 100 mark. I decided to expand this to 200 to see if it went higher, but it didn't.
+The following visualization displays the scores from a certain range, in this case (1-210). I wanted to find the best amount of iterations for this model. In some cases the `n_estimator` value of 2 gave the best results, this would be unlikely so in these cases I decided to start from 10 instead of 1.
+At first the amount of iterations was set to 100, but after analysing the results I saw that the scores were going up around the 100 mark. I decided to expand this to 210 to see if it went higher, but it didn't.
 
 ![](../Images/predictive-analysis/n_estimators_results_plot.PNG)
 
