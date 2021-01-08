@@ -15,6 +15,7 @@ To get back to answering the research question. It *is* possible to predict the 
 <details><summary>Activity Recognition Models</summary>
 
 *Note: this model has been done by my colleague Adnan Akbas*
+
 *Graphs created by Adnan Akbas were used in this section*
 
 After analysing the results from the Activity Recognition model from Adnan, we can conclude that most of the activities are predictable with high accuracy, recall and precision after applying K-fold Cross Validation.
@@ -39,6 +40,15 @@ Looking at the Confusion Matrix, not all the activities were predictable with hi
 ---
 
 <details><summary>Calculating If Respondents Did Their 150 Minutes of Moderate Intense Activities</summary>
+
+This section concludes the results of the Main Research Question:
+
+*How can Machine Learning be used to determine whether people did their 150 minutes of moderate activity in the activPAL accelerometer data of an entire week?*
+
+The previous conclusions were needed to answer the Main Research Question. With combining the results of the MET prediction models and Activity Recognition models it is possible to calculate if a respondent has done their 150 minutes of moderate intense activities within a week.
+
+Since the results of the MET prediction models are not very reliable, the 150 minutes calculation is also not very reliable. Concluding that the 150 minutes are possible to calculate, but the trustworthiness is not very high. The Main Research Question could not be answered accurately.   
+
 
 </details>
 
