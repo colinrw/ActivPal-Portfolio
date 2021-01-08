@@ -21,8 +21,8 @@ This research contains *3* different research questions. All with different sub-
 How can Machine Learning be used to predict the intensity of activities performed in a lab situation by a person, who is being monitored with Vyntus One device and wearing an activPAL accelerometer? 
 
 ##### Sub Questions
-- What measurement does activPAL use for intensity and why?  
-- Is it possible to extract this intensity measurement values from just Vyntus One data, if so, how?  
+- What measurement does activPAL use for intensity and why?  
+- Is it possible to extract this intensity measurement values from just Vyntus One data, if so, how?  
 
 ### Question 2
 
@@ -36,7 +36,7 @@ How can Machine Learning be used to predict the intensity of activities performe
 How can Machine Learning be used to determine whether people did their 150 minutes of moderate activity in the activPAL accelerometer data of an entire week? 
 
 ##### Sub Question
-- How can Machine Learning be used to recognize the activities, performed in the lab situation, in the activPAL accelerometer data?  
+- How can Machine Learning be used to recognize the activities, performed in the lab situation, in the activPAL accelerometer data?  
 
 </details>
 
