@@ -28,27 +28,14 @@ My recommendation for the MET models is to remove low variance Features. The cau
 
 ---
 
-<details><summary>Speed Calculation Formula</summary>
+<details><summary>A More In Depth Hyperparameter Tuning Approach</summary>
 
-One of the features for our MET models was `speed`. This feature improved the scores of the models tremendously, but we are not 100% sure if the calculations are correctly implemented since none of our group members has a mathematical background. 
+During the implementation of both regression models I briefly researched the implementation and use of Hyperparameters. I applied a set of parameters from different websites, but going deeper and finding my own set of parameters would probably improve the models. 
 
-##### Recommendation
+##### Recommendation 
 
-Let someone with a mathematical background implement the speed calculation correctly and see what this does to the results of the MET models.
+More in depth research on parameters that are not predefined from different websites. 
 
-</details>
-
----
-
-<details><summary>More Detailed Cross Validation Approach</summary>
-
-Myself applied Cross Validation on the MET models. If I had more time to work on this I would go for a more detailed approach. 
-
-I started very late with applying Cross Validation and was therefore not able to try and analyse more possible options. 
-
-##### Recommendation
-
-Start applying Cross Validation and K-fold Cross Validation directly after generating the first scores instead of almost at the end of the experiments. 
 
 </details>
 
