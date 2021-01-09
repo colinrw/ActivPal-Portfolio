@@ -10,7 +10,7 @@ To make predictions for the MET regression models it is necessary to have enough
 
 ##### Recommendation
 
-For future research on this topic I recommend more data. One of the main reasons why we were not able to answer the main research question with more certainty was because of too little data for our experiments. 
+For future research on this topic I recommend more respondents with different characteristics. One of the main reasons why we were not able to answer the main research question with more certainty was because of too little respondent data for our experiments. 
 
 </details>
 

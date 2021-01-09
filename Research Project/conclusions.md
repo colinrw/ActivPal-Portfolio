@@ -18,7 +18,7 @@ To get back to answering the research question. It *is* possible to predict the 
 
 *Graphs created by Adnan Akbas were used in this section*
 
-After analysing the results from the Activity Recognition model from Adnan, we can conclude that most of the activities are predictable with high accuracy, recall and precision after applying K-fold Cross Validation.
+After analysing the results from the Activity Recognition model from Adnan, we can conclude that after applying K-fold Cross Validation most of the activities are predictable with high accuracy, recall and precision.
 
 *Data from Activity Recognition model from Adnan Akbas*
 
@@ -47,7 +47,7 @@ This section concludes the results of the Main Research Question:
 
 The previous conclusions were needed to answer the Main Research Question. With combining the results of the MET prediction models and Activity Recognition models it is possible to calculate if a respondent has done their 150 minutes of moderate intense activities within a week.
 
-Since the results of the MET prediction models are not very reliable, the 150 minutes calculation is also not very reliable. Concluding that the 150 minutes are possible to calculate, but the trustworthiness is not very high. The Main Research Question could not be answered accurately.   
+Since the results of the MET prediction models are not very reliable, the 150 minutes calculation is also not very reliable. Concluding that the 150 minutes are possible to calculate with the use of Machine Learning, but the trustworthiness is not very high. The Main Research Question could not be answered accurately.   
 
 
 </details>
