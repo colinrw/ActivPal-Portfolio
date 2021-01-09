@@ -50,7 +50,7 @@ My main focus was aimed on the technical part of the project. This would mean, d
 
 Once we received the data I wanted to immediately start with exploring the data, but literature study had to be done first. After this part was over I did a lot of data exploration and pre-processing for the models. 
 
-After a few weeks of working with the data I thought that I was missing out on the creation of a model. I decided to switch my focus on researching different models and how to pre-process, configure, train and evaluate these. 
+After a few weeks of working with the data I thought that I was missing out on the creation of a model. I decided to switch my focus on researching different models and how to pre-process, configure, train and evaluate a model. 
 
 ##### Result
 
