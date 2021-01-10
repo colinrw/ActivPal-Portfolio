@@ -3,13 +3,11 @@ By: Colin Werkhoven
 
 Studentnumber: 17079578
 
-# Notes for the Portfolio
-
-- Show plots in the markdown directly instead of having to click to see the plots.
-- Add plots with `grid`, `markers` and `units`.
-- Check dead links.
-- Write compact, try to get the portfolio as small as possible.
-- Add notes to visualization to make clear what it is showing.
+Project group
+- Adnan Akbas — [portfolio](https://github.com/klict/activepal-portfolio)
+- Ali Safdari — 
+- Matthew Turkenberg — 
+- Mark Boon — 
 
 # Introduction
 
