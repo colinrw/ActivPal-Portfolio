@@ -35,10 +35,10 @@ The entire notebook can be found [here](../Images/Data%20Preprocessing/Code/Acti
 
 ![](../Images/Data%20Preprocessing/activity-distribution.png)
 
-We can see that `springen` and `traplopen` have very little data points. After some analysing we found out that these activities were only performed for 1 minute instead of 5 for the other activities. 
+We can see that `springen` and `traplopen` have very little data points. After some analysing we found out that these activities were only performed for 1 minute instead of 5 for the other activities. This 1 minute of data was not enough for further modelling, we decided to leave `springen` and `traplopen` out of it in consultation with CBS. 
 
 </details>
 
 ---
 
-[<  Go Back](../README.md)
+[<  Go Back](../README.md) — [Data Cleaning >](data_cleaning.md) 
