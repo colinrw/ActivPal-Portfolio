@@ -130,8 +130,6 @@ How can Machine Learning be used to determine whether people did their 150 minut
 
 </details>
 
----
-
 <details><summary>Evaluation</summary>
 
 During this project it was not possible to execute all experiments. Different causes were, not enough knowledge, time or data. This chapter contains different subjects for future research. 
