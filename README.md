@@ -93,7 +93,7 @@ If I look back at what I learnt throughout this minor I am happy with my choices
 
 ##### Situation
 
-At the start of this Applied Data minor we started as a group of 6 students. The group differentiated between 4 Software Engineering, 1 BIM and 1 Sport Management students. Different differentiates means different knowledge. 
+At the start of this Applied Data minor we started as a group of 6 students. The group differentiated between 4 Software Engineering, 1 BIM and 1 Sport Management students. Different differentiations means different knowledge. 
 
 Unfortunately the difficulty was too much for one of our team members and he eventually decided to stop with this minor. This meant the rest of the team had to work a bit harder.
 
