@@ -1,6 +1,8 @@
 # ActivPal Portfolio - Data Science Minor 
 By: Colin Werkhoven 
 
+#### *Note: I hope the portfolio isn't too extensive.*
+
 Studentnumber: 17079578
 
 Project group
@@ -315,6 +317,50 @@ The main research questions have been divided into smaller tasks called research
 
 </details>
 
+# Domain knowledge
+
+<details><summary>Introduction of the subject field</summary>
+
+
+
+</details>
+
+<details><summary>Literature research</summary>
+
+### Introduction
+
+During this project, most of my literature research was done for different models. CBS provided us with a lot of papers that could possibly be useful for our own research. 
+
+##### Researching Cut Off Points
+Annemieke from CBS pointed us towards `Cut Off Points` at the start of the project. I decided to pick this one and used [one of the papers](Images/Domain%20Knowledge/Beyond%20Cut%20Points%20Accelerometer%20Metrics%20that%20Capture%20The%20Physical%20Activity%20Profile.pdf) CBS provided to us.
+
+What I found was that cut off points are similar to outliers. Like the name `cut off point` states, its the point where you remove everything that goes higher or lower of the stated cut off point. The only cut off point used during this research was for predicted MET values. We used a cut off point of `3` to determine moderate intense activities. Once the MET value was lower than 3, it would not fit under moderate intense. 
+
+##### Researching Regression Models
+The literature research for the Regression model has been extensively implemented. You can find the entire research in the [selecting a model](Predictive%20Analysis/selecting_a_model.md) chapter.
+
+</details>
+
+<details><summary>Explanation of Terminology, jargon and definitions</summary>
+
+A list of jargon that is used during this project. 
+
+|Jargon/Definition|Explanation|
+|------------|---------|
+|activPAL accelerometer|activPAL is the company that created the accelerometer that was used during this research. This activPAL device is mounted to the thigh of the participants and measures the X, Y and Z values. The measurements are done 20 times within a second ([source](https://www.palt.com/why-activpal/)).  
+|X, Y, Z data|The X, Y and Z data is based on a 3-dimensional space. The values change based on the direction the activPAL device is facing.
+|Vyntus One|Vyntus One is a device to measure the oxygen intake of the user. 
+|VO2|Using the Vyntus One device, the system provide the user with a `VO2` value. Also known as oxygen intake.
+|CBS|Centraal Bureau van Statistiek. Our project is in collaboration with CBS. 
+|Lab/Lab Session/Lab Research|CBS measured certain activities to have an ground truth for all activities. This was done in a lab setting where all respondents were measured with the activPAL and Vyntus One device to do different activities for 5 minutes. 
+|Respondent|A respondent is a person that participated in the lab research.
+|MET|Metabolic Equivalent of Task. MET is a measuring unit to measure the intensity of certain activities.  
+|Moderate Intense Activity|A MET value from 3 or above. This cut-off point is used to answer to main research question. 
+
+---
+
+</details>
+
 # Predictive Analytics
 
 <details><summary>Selecting a Model</summary>
@@ -359,10 +405,9 @@ The `K-nearest Neighbour Model` would be suitable if we only needed to predict t
 
 The final decision will be comparing the `Random Forest Model` with the `XGBoost Model`. Both models make use of decision trees which delivers low variance and less biased results. Finally, to pick a model for our MET predictions, we will be configure both models as identical as possible. More on this can be found in the next chapter.
 
+---
 
 </details>
-
----
 
 <details><summary>Configuring a Model</summary>
 
@@ -668,26 +713,6 @@ Here you can see how the `Ground Truth` and `Prediction` fit the Regression line
 </details>
 
 ---
-
-</details>
-
-# Domain knowledge
-
-<details><summary>Introduction of the subject field</summary>
-
-
-
-</details>
-
-<details><summary>Literature research</summary>
-
-
-
-</details>
-
-<details><summary>Explanation of Terminology, jargon and definitions</summary>
-
-
 
 </details>
 
