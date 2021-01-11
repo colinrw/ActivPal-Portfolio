@@ -86,7 +86,7 @@ If I look back at what I learnt throughout this minor I am happy with my choices
 
 # Research project
 
-<details><summary>Task definition</summary>
+<details><summary>Task definition </summary>
 
 This project is a collaboration between The Hague University of Applied Sciences (THUAS) and Centraal Bureau voor de Statistiek (CBS). 
 
@@ -231,6 +231,8 @@ Since the results of the MET prediction models are not very reliable, the 150 mi
 
 </details>
 
+---
+
 </details>
 
 <details><summary>Planning</summary>
@@ -311,12 +313,9 @@ The main research questions have been divided into smaller tasks called research
 
 </details>
 
-</details>
+---
 
-- [Task definition](Research%20Project/task_definition.md)
-- [Evaluation](Research%20Project/evaluation.md)
-- [Conclusions](Research%20Project/conclusions.md)
-- [Planning](Research%20Project/planning.md)
+</details>
 
 # Predictive Analytics
 
