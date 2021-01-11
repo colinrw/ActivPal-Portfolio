@@ -13,10 +13,15 @@ Project group
 
 # Introduction
 
-Centraal Bureau van Statistiek wants to know if it is possible to apply Machine Learning to determine if people have done their 150 minutes of moderate intense activities within a week. This research will find out if it is possible to make these calculations with different Machine Learning models. 
+Centraal Bureau van Statistiek wants to know if it is possible to apply Machine Learning to determine if people have done their 150 minutes of moderate intense activities within a week. This research will find out if it is possible to make these calculations with the application of different Machine Learning models. 
 
 # Datacamp Courses
-Progress in DataCamp can be found [here](Images/datacamp-progress-colin-werkhoven.PNG).
+
+<details><summary>Progress in DataCamp can be found here</summary>
+
+![](Images/datacamp-progress-colin-werkhoven.PNG)
+
+</details>
 
 # Reflection and Evaluation
 
@@ -88,13 +93,33 @@ If I look back at what I learnt throughout this minor I am happy with my choices
 
 ##### Situation
 
+At the start of this Applied Data minor we started as a group of 6 students. The group differentiated between 4 Software Engineering, 1 BIM and 1 Sport Management students. Different differentiates means different knowledge. 
+
+Unfortunately the difficulty was too much for one of our team members and he eventually decided to stop with this minor. This meant the rest of the team had to work a bit harder.
+
 ##### Task
+
+The application of Scrum was useful for our team. In these sprint plannings we created different task and assigned them to whoever wanted to work on certain subjects. This would mean smaller `predictive analysis` tasks so everybody on the team could create a model and put it in their portfolio.  
 
 ##### Actions
 
+We decided to give everyone a different model to work on, since every team member had to create a model for the portfolio. This turned out pretty fun, because it felt like we were competing with each other to get the best performing model.   
+
 ##### Result
 
+The model battle was fun and everybody learned to implement and improve their models with feedback from each other. Competing was fun and everybody showed their progress during the standups. We would all learn and add these learnings to our own models. 
+
+Eventually the best scoring models were chosen for our final experiments. We already saw which model it would be, but the competition was still fun!
+
 ##### Reflection
+
+Since this minor had to be done with the current COVID-19 circumstances, the work environment for each member was different to deal with so I took this in consideration.
+
+This team was very nice to work with, everybody was helpful and wanted to finish this project with a good grade (not a 5.5). A few downsides were being on time for meetings. This impacted my own motivation to be on time as well. I was like "why should I be on time if I have to wait for 15-30 minutes for others to join" which resulted in being late to meetings. 
+
+Another point which annoyed me was the moderate contribution of certain team members and meeting deadlines. I have my bad days as well, but seeing this back to back works a bit demotivating.
+
+Nonetheless, I am very proud of what this project group has achieved in the past months. Not being able to see each other in real life and still managing a complex project is quite an achievement. 
 
 ---
 
@@ -336,7 +361,7 @@ The main research questions have been divided into smaller tasks called research
 
 <details><summary>Introduction of the subject field</summary>
 
-
+The main subject of this project was to work with big amounts of data and combine this with Machine Learning. The data had to be pre-processed to turn it into useful information for this research. This part was very important, because doing this wrong or incorrect would results in bad performing Machine Learning models. 
 
 </details>
 
