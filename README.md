@@ -279,7 +279,7 @@ Since the results of the MET prediction models are not very reliable, the 150 mi
 
 In this planning chapter I will discuss how we made use of the Scrum Methodology, how our first plannings came to realization and our overall used techniques. 
 
-*Note: the following sections were written by me and are taken from the Research Plan ([find entire research plan here](../Images/Research%20Project/Research%20plan%20-%20Final.pdf))* 
+*Note: the following sections were written by me and are taken from the Research Plan ([find entire research plan here](Images/Research%20Project/Research%20plan%20-%20Final.pdf))* 
 
 ---
 
