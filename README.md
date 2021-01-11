@@ -1,7 +1,5 @@
-# ActivPal Portfolio - Data Science Minor 
+# activPAL Portfolio - Data Science Minor 
 By: Colin Werkhoven 
-
-#### *Note: I hope the portfolio isn't too extensive.*
 
 Studentnumber: 17079578
 
@@ -11,9 +9,11 @@ Project group
 - Matthew Turkenberg — 
 - Mark Boon — 
 
+#### *Note: I hope the portfolio isn't too extensive.*
+
 # Introduction
 
-Add general introduction about the project.
+Centraal Bureau van Statistiek wants to know if it is possible to apply Machine Learning to determine if people have done their 150 minutes of moderate intense activities within a week. This research will find out if it is possible to make these calculations with different Machine Learning models. 
 
 # Datacamp Courses
 Progress in DataCamp can be found [here](Images/datacamp-progress-colin-werkhoven.PNG).
@@ -24,17 +24,31 @@ Progress in DataCamp can be found [here](Images/datacamp-progress-colin-werkhove
 
 ##### Situation
 
+This project is done during the COVID-19 pandemic and will therefore be completed in an online environment. This will bring some complications, but our team will figure out ways to make this work. 
+
+Before starting this project I decided I wanted to work on my `leader` and `initiative` sides. This meant starting and leading standups and taking initiative to get in contact with teachers and CBS.  
+
 ##### Task
+With my initiative to work on my leader role I found it important to know what every team member was doing. Besides knowing what my team members were doing I decided to work on new unknown things so I could share them with the other team members. 
 
 ##### Actions
+During most standups I was asking a lot of questions to my team member about the process they made. Doing this gave me broader knowledge about the project and would be informative for the rest as well. 
+
+I decided to start with creating my first Machine Learning model. This was a Regression Model to predict a MET value. During standups I tried to provide as much information as possible to my team members, so they would learn and understand it too. I was pretty happy with the results of the models and was able to help my team mates with creating a Regression model as well.
 
 ##### Result
+During multiple retrospectives I longed for more in depth explanations during the standups. This was not happening after the first retrospective, but after repeating this the following retro's, everybody explained more and this was profitable for the entire group. 
 
 ##### Reflection
+I am happy with all the contributions I delivered during this project. Creating the MET regression model was a very important task to answer the main research question. Besides the actual model creation, a lot of data exploration and preparation had to be done to start with the MET models. 
 
-</details>
+Besides all the good things, there were also some days where I was completely demotivated. This was mainly because of the MET models. Since there were 10+ different models, having to make a change would mean changing all the models. Doing this every week for a while made me less motivated. What helped was telling my team members that I was less motivated and they motivated and cheered me up.
+
+And finally my contributions to the research paper. Since I was less motivated, the team already started with the research paper. Besides this, I still managed to write 3 very important chapters that were necessary for the final paper. 
 
 ---
+
+</details>
 
 <details><summary>Reflection on own learning objectives</summary>
 
@@ -66,9 +80,9 @@ During this minor I learned a lot. The most exciting part is being able to creat
 
 If I look back at what I learnt throughout this minor I am happy with my choices. The only thing I wanted to learn more about is different Machine Learning models that were not used in our project and the implication of Neural Networks.   
 
-</details>
-
 ---
+
+</details>
 
 <details><summary>Evaluation on the group project as a whole</summary>
 
@@ -82,9 +96,10 @@ If I look back at what I learnt throughout this minor I am happy with my choices
 
 ##### Reflection
 
+---
+
 </details>
 
----
 
 # Research project
 
