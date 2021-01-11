@@ -4,7 +4,7 @@ I started a bit later than the rest because I was still finishing the MET Regres
 
 |Chapter|Contribution|Link/Example|
 |------------|--------|--------|
-|MET Regression Models V1 |This was part of the `methods` chapter. Here I wrote how the MET regression models were realised. Starting with data preparation, features engineering and finally training and evaluating the models.  | ![here](../Images/Communication/met_regression_models_V1.docx)
+|MET Regression Models V1 |This was part of the `methods` chapter. Here I wrote how the MET regression models were realised. Starting with data preparation, features engineering and finally training and evaluating the models.  | ![here](../Images/Communication/met_regression_models_V1.pdf)
 |MET Regression Models V2 ||
 |MET Regression Results V1 ||
 |MET Regression Results V2 ||
