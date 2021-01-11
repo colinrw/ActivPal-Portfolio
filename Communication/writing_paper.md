@@ -20,4 +20,6 @@ While writing a research paper it is important to have visualizations and tables
 |------------|--------|
 |![](../Images/Communication/table-before.PNG)|![](../Images/Communication/table-after.PNG)|
 
+---
+
 [<  Go Back](../README.md)

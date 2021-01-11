@@ -24,4 +24,6 @@ The following table is an example of 1 row of data that is used for the MET regr
 |gender|boolean|1.0 (true)|The gender of the respondent. Male or Female.
 |meets_activity_guidelines|boolean|0.0 (false)|During the lab sessions characteristics and the daily activities from the respondents were noted and concluded if the respondent adheres to the activity guidelines or not. 
 
+---
+
 [<  Data Preparation](data_preparation.md) — [Data Visualization >](data_visualization.md)

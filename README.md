@@ -362,6 +362,8 @@ The final decision will be comparing the `Random Forest Model` with the `XGBoost
 
 </details>
 
+---
+
 <details><summary>Configuring a Model</summary>
 
 ### Introduction
@@ -670,17 +672,428 @@ Here you can see how the `Ground Truth` and `Prediction` fit the Regression line
 </details>
 
 # Domain knowledge
-- [Introduction of the subject field](Domain%20Knowledge/introduction_subject_field.md)
-- [Literature research](Domain%20Knowledge/literature_research.md)
-- [Explanation of Terminology, jargon and definitions](Domain%20Knowledge/terminology_jargon_definitions.md)
+
+<details><summary>Introduction of the subject field</summary>
+
+
+
+</details>
+
+<details><summary>Literature research</summary>
+
+
+
+</details>
+
+<details><summary>Explanation of Terminology, jargon and definitions</summary>
+
+
+
+</details>
 
 # Data preprocessing
-- [Data exploration](Data%20Preprocessing/data_exploration.md)
-- [Data cleansing](Data%20Preprocessing/data_cleaning.md)
-- [Data preparation](Data%20Preprocessing/data_preparation.md)
-- [Data explanation](Data%20Preprocessing/data_explanation.md)
-- [Data visualization (exploratory)](Data%20Preprocessing/data_visualization.md)
+
+<details><summary>Data exploration</summary>
+
+#### Introduction
+
+The data provided by CBS was a lot. Therefore we decided to start by filtering out the data that was labelled with an activity. Each respondent had a corresponding file with the `start` and `stop` time they performed certain activities in the lab.
+
+<details><summary>Here is an example of how this was provided to us</summary>
+
+|Activity|Start|Stop|
+|------------|---------|--------|
+|springen|2019-09-16 14:29:20|2019-09-16 14:30:18|
+traplopen|2019-09-16 14:31:18|2019-09-16 14:32:04|
+fietsen licht|2019-09-16 14:41:29|2019-09-16 14:46:29|
+fietsen zwaar|2019-09-16 14:46:29|2019-09-16 14:51:29|
+lopen|2019-09-16 15:12:00|2019-09-16 15:17:00|
+rennen|2019-09-16 15:17:00|2019-09-16 15:22:00|
+zitten|2019-09-16 15:31:00|2019-09-16 15:36:00|
+staan|2019-09-16 15:45:00|2019-09-16 15:50:00|
+
+With these timestamps it was possible to filter out all the activity data from all respondents and put them all in a new CSV file. This has been done with the following code. 
+
+![](Images/Data%20Preprocessing/combine_activity_data.PNG)
+
+The entire notebook can be found [here](Images/Data%20Preprocessing/Code/combine_correspondent_activities.py).
+
+</details>
+
+---
+
+<details><summary>Activity Distribution </summary>
+
+Once the activities were combined I created a distribution with all respondent activities. The results are shown below.
+
+The entire notebook can be found [here](Images/Data%20Preprocessing/Code/Activity%20Distribution.py).
+
+![](Images/Data%20Preprocessing/activity-distribution.png)
+
+We can see that `springen` and `traplopen` have very little data points. After some analysing we found out that these activities were only performed for 1 minute instead of 5 for the other activities. This 1 minute of data was not enough for further modelling, we decided to leave `springen` and `traplopen` out of it in consultation with CBS. 
+
+</details>
+
+---
+
+</details>
+
+<details><summary>Data cleaning</summary>
+
+#### Introduction
+
+Since CBS provided us already cleaned data, it was not possible to do a lot of data cleaning for this project. 
+
+<details><summary>Fixing timestamps</summary>
+
+One of the issues with the data provided by CBS was the timestamps were not converted to readable and useful times yet. 
+
+Example of the unconverted timestamp. The 2 long integers should be together and converted to a readable timestamp.
+
+|Before Convertion|After Convertion|
+|------|------|
+|![](Images/Data%20Preprocessing/timestamp_issue.png)| ![](Images/Data%20Preprocessing/timestamp_fixed.PNG) |
+
+The following function has been used to convert the unreadable timestamps.
+
+![](Images/Data%20Preprocessing/timestamp_function.PNG)
+
+</details>
+
+---
+
+<details><summary>Switching Diceface</summary>
+
+A Diceface is the direction the activPAL is facing. The issue we are facing is when a respondent flips from its front to the back, the measured X, Y and Z values also flip sides. To solve this, we changed to X, Y and Z values according the switch in diceface value. 
+
+Example of the diceface directions [found here](http://docs.palt.com/display/AL/MORA):
+![](Images/Data%20Preprocessing/diceface-directions.PNG)
+
+The following images were provided by Brian Keijzer and has been used to determine how to flip the dicefaces. 
+
+|Diceface Physical |Diceface Numerical|
+|------|------|
+|![](Images/Data%20Preprocessing/diceface-physical.jpg)| ![](Images/Data%20Preprocessing/diceface-numerical.jpg) |
+
+Here is an example how this transformation has been done in code. We used diceface `1` as a baseline to convert to. These convertion functions are written by Adnan and me.
+
+![](Images/Data%20Preprocessing/diceface-function.PNG)
+
+*During the MET model creation the feature `sum of magnitude of acceleration (sum_mag_acc)` was used, this feature adds the X, Y and Z values together. Therefore, the diceface convertion was not needed in the end.*
+
+The entire notebook can be found [here](Images/Data%20Preprocessing/Code/normalize_diceface_values-v3.py).
+
+</details>
+
+---
+
+</details>
+
+
+<details><summary>Data preparation</summary>
+
+This chapter is mainly about the data preparation for the MET regression models. The preparation has partly been done by Ali Safdari and me.
+
+<details><summary>Convert to Numerical for Machine Learning</summary>
+
+Machine Learning models can't work with non-integer values, therefore we need to convert these values to  integer values. Here are a few examples of respondent characteristics that were converted to numerical values. 
+
+|Description|Function|
+|------|------|
+|Convert `ja/nee` string to number| ![](Images/Data%20Preprocessing/convert_string_to_number.PNG) |
+|Convert `age` to categorical number| ![](Images/Data%20Preprocessing/convert_age_category.PNG) |
+
+The remaining functions can be found at the top of [this](Images/Data%20Preprocessing/Code/creating_main_dataframe.py) notebook. 
+
+</details>
+
+---
+
+<details><summary>Feature Creation</summary>
+
+To have a useful data set for the MET regression model we needed to create a data set with all the possible features. At first Ali and I created a simple data set with the following features:
+
+|Feature|Function|
+|---|------|
+|Sum of Magnitude of Acceleration (calculate from X, Y and Z - by ?)| ![](Images/Data%20Preprocessing/sum_mag_function.PNG) |
+|MET value (calculated from vo2 + weight in kg) - by ?| ![](Images/Data%20Preprocessing/MET_function.PNG) |
+|Body Mass Index (BMI; calculate from weight and height) - by Ali and Me| ![](Images/Data%20Preprocessing/BMI_function.PNG) |
+
+All mathematical functions can be found in [this](Images/Data%20Preprocessing/Code/math_helper.py) notebook. 
+
+</details>
+
+---
+
+<details><summary>Putting it all together</summary>
+
+Eventually this was the final function that actually created the data set that was used for the MET regression models. The function took all the created features in the notebook and added it together. 
+
+![](Images/Data%20Preprocessing/adding_together_function.PNG)
+
+The entire MET regression data preparation can be found in [this](Images/Data%20Preprocessing/Code/creating_main_dataframe.py) notebook (same as the above mentioned notebook). 
+
+
+</details>
+
+---
+
+</details>
+
+<details><summary>Data explanation</summary>
+
+The data that will be explained is coming from the previous [data preparation](Data%20Preprocessing/data_preparation.md) chapter. Most of these `column names` are features that are used for the MET regression models. 
+
+The following table is an example of 1 row of data that is used for the MET regression models. Every row is resampled to 1 minute (60 seconds) since MET is calculated in minutes.
+
+|Column name|DataType|Example|Explanation|
+|------|------|------|------|
+|pal_time|timestamp|2019-10-10 15:36:00|Since we need to predict the MET value, and MET is calculated in 60 seconds, the `pal_time` column name is the time the MET value is calculated on.  
+|respondent_code|string|BMR004|The unique number that corresponds to a respondent.
+|activity|string|lopen|The performed activity from that minute.
+|mean_met|double|1.2920676857268667|The mean MET value from the measured minute. 
+|sum_mag_acc|double|1116.7722891103585|The summation of the X, Y and Z values to the power of 2 within the measured minute.
+|mean_speed|double|23533.170460441113|The mean speed within the measured minute. 
+|weight_kg|double|75.7|The weight of the respondent in kilograms.
+|length_cm|double|166.79999999999998|The length of the respondent in centimeters.
+|bmi|double|27.20844906808366|The Body Mass Index, which is calculated with the weight and length of the respondent.
+|is_sporter|boolean|1.0 (true)|If the respondent is a sporter or not. 
+|age_category|boolean|4.0|The age category from the respondent. `4.0` means the age of the respondent is between 40-44.
+|meets_balance_guidelines|boolean|0.0 (false)|The balance of the respondent was measured during the lab sessions. The respondent adheres to the balance guidelines or he/she does not.
+|estimated_level|boolean|0.0 (false)|CBS looked at the characteristics of the respondents and decided based on these if the respondent adheres to the estimated level from their perspective. 
+|walking_speed_km|double|5.0|The speed in kilometers the walking activity was performed in the lab.
+|running_speed_km|double|10.0|The speed in kilometers the running activity was performed in the lab.
+|gender|boolean|1.0 (true)|The gender of the respondent. Male or Female.
+|meets_activity_guidelines|boolean|0.0 (false)|During the lab sessions characteristics and the daily activities from the respondents were noted and concluded if the respondent adheres to the activity guidelines or not. 
+
+---
+
+</details>
+
+<details><summary>Data visualization (exploratory)</summary>
+
+*Note: a lot of visualizations can be found in the [`predictive analysis`](Predictive%20Analysis/visualizing_the_outcome_of_a_model.md) chapter. Please check that file as well.*
+
+<details><summary>Activity Distribution</summary>
+
+This has already been shown in the [data exploration](Data%20Preprocessing/data_exploration.md) chapter. The distribution of all lab activities. After visualizing this it was clear that `springen` and `traplopen` was measured differently compared to the other activities.
+
+![](Images/Data%20Preprocessing/activity-distribution.png)
+
+</details>
+
+---
+
+</details>
 
 # Communication
-- [Presentations](Communication/presentations.md)
-- [Writing paper](Communication/writing_paper.md)
+
+<details><summary>Presentations</summary>
+
+In this chapter I will describe which presentations I've contributed to and which I presented.
+Since the content of the first 5 presentations was not that useful and informative I decided to leave them out of here. 
+
+During this Applied Data Science Minor, I've presented 2 presentations and contributed in almost every presentation.
+
+#### [Presentation #6 — PDF](Images/Presentation%20Week%206.pdf)
+
+Presentation #6 was presented by myself. 
+
+My contributions for Presentation #6
+<details> <summary>Slide 7</summary>
+
+![Slide 7](Images/Presentations/presentation-6-page-7.PNG)
+
+</details>
+
+<details> <summary>Slide 10</summary>
+
+![Slide 10](Images/Presentations/presentation-6-page-10.PNG)
+</details>
+
+#### [Presentation #7 — PDF](Images/Presentation%20Week%207.pdf)
+
+My contributions for Presentation #7
+<details> <summary>Slide 4</summary>
+
+![Slide 4](Images/Presentations/presentation-7-page-4.PNG)
+
+</details>
+
+#### [Presentation #8 — PDF](Images/External%20Presentation%202%20Week%208.pdf)
+
+My contributions for Presentation #8
+<details> <summary>Slide 6</summary>
+
+![Slide 6](Images/Presentations/presentation-8-page-6.PNG)
+
+</details>
+
+#### [Presentation #9 — PDF](Images/Presentation%20Week%209.pdf)
+
+My contributions for Presentation #9
+<details> <summary>Slide 6</summary>
+
+![Slide 6](Images/Presentations/presentation-9-page-6.PNG)
+
+</details>
+
+<details> <summary>Slide 7</summary>
+
+![Slide 7](Images/Presentations/presentation-9-page-7.PNG)
+</details>
+
+#### [Presentation #10 — PDF](Images/Presentation%20Week%2010.pdf)
+
+Presentation #10 was presented together with my colleague Mark Boon.
+
+My contributions for Presentation #10
+<details> <summary>Slide 6</summary>
+
+![Slide 6](Images/Presentations/presentation-10-page-6.PNG)
+
+</details>
+
+<details> <summary>Slide 7</summary>
+
+![Slide 7](Images/Presentations/presentation-10-page-7.PNG)
+
+</details>
+
+<details> <summary>Slide 8</summary>
+
+![Slide 8](Images/Presentations/presentation-10-page-8.PNG)
+
+</details>
+
+<details> <summary>Slide 9</summary>
+
+![Slide 9](Images/Presentations/presentation-10-page-9.PNG)
+
+</details>
+
+<details> <summary>Slide 10</summary>
+
+![Slide 10](Images/Presentations/presentation-10-page-10.PNG)
+
+</details>
+
+#### [Presentation #11 — PDF](Images/Presentation%20Week%2011.pdf)
+
+My contributions for Presentation #11
+<details> <summary>Slide 5</summary>
+
+![Slide 5](Images/Presentations/presentation-11-page-5.PNG)
+
+</details>
+
+<details> <summary>Slide 6</summary>
+
+![Slide 6](Images/Presentations/presentation-11-page-6.PNG)
+
+</details>
+
+<details> <summary>Slide 7</summary>
+
+![Slide 7](Images/Presentations/presentation-11-page-7.PNG)
+
+</details>
+
+<details> <summary>Slide 8</summary>
+
+![Slide 8](Images/Presentations/presentation-11-page-8.PNG)
+
+</details>
+
+#### [Presentation #12 — PDF](Images/External%20Presentation%202%20Week%2012.pdf)
+
+My contributions for Presentation #12
+<details> <summary>Slide 5</summary>
+
+![Slide 5](Images/Presentations/presentation-12-page-5.PNG)
+
+</details>
+
+<details> <summary>Slide 6</summary>
+
+![Slide 6](Images/Presentations/presentation-12-page-6.PNG)
+
+</details>
+
+<details> <summary>Slide 7</summary>
+
+![Slide 7](Images/Presentations/presentation-12-page-7.PNG)
+
+</details>
+
+<details> <summary>Slide 8</summary>
+
+![Slide 8](Images/Presentations/presentation-12-page-8.PNG)
+
+</details>
+
+<details> <summary>Slide 9</summary>
+
+![Slide 9](Images/Presentations/presentation-12-page-9.PNG)
+
+</details>
+
+#### [Presentation #14 — PDF](Images/Presentation%20Week%2014.pdf)
+
+My contributions for Presentation #14
+<details> <summary>Slide 5</summary>
+
+![Slide 5](Images/Presentations/presentation-14-page-5.PNG)
+
+</details>
+
+#### [Presentation #15 — PDF](Images/Presentation%20Week%2015.pdf)
+
+My contributions for Presentation #15
+<details> <summary>Slide 4</summary>
+
+![Slide 4](Images/Presentations/presentation-15-page-4.PNG)
+
+</details>
+
+<details> <summary>Slide 5</summary>
+
+![Slide 5](Images/Presentations/presentation-15-page-5.PNG)
+
+</details>
+
+<details> <summary>Slide 6</summary>
+
+![Slide 6](Images/Presentations/presentation-15-page-6.PNG)
+
+</details>
+
+---
+
+</details>
+
+<details><summary>Writing paper</summary>
+
+I started a bit later than the rest because I was still finishing the MET Regression Models. 
+
+|Chapter|Contribution|Link/Example|
+|------------|--------|--------|
+|MET Regression Models V1 |This was part of the `methods` chapter. Here I wrote how the MET regression models were realised. Starting with data preparation, features engineering and finally training and evaluating the models.| [Find chapter here](Images/Communication/met_regression_models_V1.pdf) (pdf opens) |
+|MET Regression Models V2 |The most important feedback was about writing mathematical equations. This was processed during V2. | [Find chapter here](Images/Communication/met_regression_models_V2.pdf) (pdf opens) |
+|MET Regression Results V1 |This chapter was mainly about writing what the actual results are of the experiments. I wrote about what results are showing and how we got these results..| [Find chapter here](Images/Communication/met_regression_results_V1.pdf) (pdf opens) |
+|MET Regression Results V2 ||
+|Conclusion V1 |The first conclusion was made with Adnan. We started with writing down the results and own conclusions of the models we both created. Afterwards we reviewed each others conclusions and came up with an overall conclusion. Resulting in an conclusion from 2 perspectives. | ![](Images/Communication/conclusion-V1-adnan.PNG) |
+|Conclusion V2 |After receive feedback on `Conclusion V1` I started with writing V2. Answering the main research question was not done concisely and certain conclusions were not strongly substantiated. While writing V2 I made sure these points were processed. |![](Images/Communication/conclusion-V2.PNG)|
+|Reviewing Team Members|There is no proof of actual reviewing besides the comments in the document. During the reviewing I tried to be very critical, even though we did not want to publish our research in an actual paper.|  ![](Images/Communication/review-example.png) |
+
+---
+
+While writing a research paper it is important to have visualizations and tables that follow the paper guidelines. I started researching how to create those tables. Here is an example of one of the research paper tables.
+
+|Before|After|
+|------------|--------|
+|![](Images/Communication/table-before.PNG)|![](Images/Communication/table-after.PNG)|
+
+---
+
+</details>

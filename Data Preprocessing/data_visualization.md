@@ -10,4 +10,6 @@ This has already been shown in the [data exploration](data_exploration.md) chapt
 
 </details>
 
+---
+
 [<  Data Explanation](data_explanation.md) — [README >](../README.md)
