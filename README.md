@@ -96,8 +96,6 @@ Statistic Netherlands wants to know if it's possible to measure if respondents m
 
 </details>
 
----
-
 <details><summary>Research Questions</summary>
 
 *These research questions were created by my colleagues, so I am not taking any credits for them.*
@@ -130,12 +128,188 @@ How can Machine Learning be used to determine whether people did their 150 minut
 
 ---
 
+</details>
+
+---
+
+<details><summary>Evaluation</summary>
+
+During this project it was not possible to execute all experiments. Different causes were, not enough knowledge, time or data. This chapter contains different subjects for future research. 
+
+---
+
+<details><summary>Too Little Data</summary>
+
+To make predictions for the MET regression models it is necessary to have enough data so the model could generalize. This was not the case. From the 40 respondents, only 25 were useful for our experiments. The results of this was that our MET predictions models were *overfitting*, which resulted in inaccurate results for the calculation of the 150 minutes moderate intense physical activity.  
+
+##### Recommendation
+
+For future research on this topic I recommend more respondents with different characteristics. One of the main reasons why we were not able to answer the main research question with more certainty was because of too little respondent data for our experiments. 
 
 </details>
 
 ---
 
-<details><summary>2</summary>
+<details><summary>Removing Low Variance Features</summary>
+
+While creating the features for the MET prediction models we picked the most logical features from the `respondenten.csv` file (this file contains different characteristics of all participating respondents) that was provided by CBS, but the most logical is not always the most optimal.
+
+##### Recommendation
+
+My recommendation for the MET models is to remove low variance Features. The cause of the overfitting MET models could be having low variance features. The models could improve (or worsen) once the low variance features are removed from the models.  
+
+</details>
+
+---
+
+<details><summary>A More In Depth Hyperparameter Tuning Approach</summary>
+
+During the implementation of both regression models I briefly researched the implementation and use of Hyperparameters. I applied a set of parameters from different websites, but going deeper and finding my own set of parameters would probably improve the models. 
+
+##### Recommendation 
+
+More in depth research on parameters that are not predefined from different websites. 
+
+
+</details>
+
+---
+
+</details>
+
+<details><summary>Conclusions</summary>
+
+In this conclusion chapter I will go over the results and conclude my perspective on the final results. 
+
+<details><summary>MET Prediction Models</summary>
+
+My conclusion after analyzing the MET regression models ([results can be found here](Predictive%20Analysis/evaluating_a_model.md)) is that all Random Forest and XGBoost models seem to overfit. The models gave decent results before applying the test data set, but once the test data set was applied to results worsened. Generalizing during the training of the model was not done accurately due to not having enough respondents in the data set. 
+
+To get back to answering the research question. It *is* possible to predict the intensity, but the predictions are not very reliable since the models are not giving accurate predictions.   
+
+</details>
+
+---
+
+<details><summary>Activity Recognition Models</summary>
+
+*Note: this model has been done by my colleague Adnan Akbas*
+
+*Graphs created by Adnan Akbas were used in this section*
+
+After analysing the results from the Activity Recognition model from Adnan, we can conclude that after applying K-fold Cross Validation most of the activities are predictable with high accuracy, recall and precision.
+
+*Data from Activity Recognition model from Adnan Akbas*
+
+| |K-fold Cross Validation Score|
+|------------|---------|
+|Accuracy|0.82 (+/- 0.04)|
+|Recall|0.84 (+/- 0.04)|
+|Precision|0.82 (+/- 0.04)|
+
+Looking at the Confusion Matrix, not all the activities were predictable with high accuracy. The `Cycling Light` and `Cycling Heavy` activity results were a bit worse compared to the other results. Since the movement of cycling is always the same, no matter if it's light or heavy, it is hard for the model to make accurate predictions for these activities. 
+
+*Confusion Matrix from Adnan Akbas*
+
+![](Images/Research%20Project/activity-recognition-confusion-matrix.PNG)
+
+
+</details>
+
+---
+
+<details><summary>Calculating If Respondents Did Their 150 Minutes of Moderate Intense Activities</summary>
+
+This section concludes the results of the Main Research Question:
+
+*How can Machine Learning be used to determine whether people did their 150 minutes of moderate activity in the activPAL accelerometer data of an entire week?*
+
+The previous conclusions were needed to answer the Main Research Question. With combining the results of the MET prediction models and Activity Recognition models it is possible to calculate if a respondent has done their 150 minutes of moderate intense activities within a week.
+
+Since the results of the MET prediction models are not very reliable, the 150 minutes calculation is also not very reliable. Concluding that the 150 minutes are possible to calculate with the use of Machine Learning, but the trustworthiness is not very high. The Main Research Question could not be answered accurately.   
+
+
+</details>
+
+</details>
+
+<details><summary>Planning</summary>
+
+In this planning chapter I will discuss how we made use of the Scrum Methodology, how our first plannings came to realization and our overall used techniques. 
+
+*Note: the following sections were written by me and are taken from the Research Plan ([find entire research plan here](../Images/Research%20Project/Research%20plan%20-%20Final.pdf))* 
+
+---
+
+<details><summary>Procedure</summary>
+
+For the activPAL project management we have been using the Agile (scrum) method. To follow the scrum method, there will be daily stand-ups. Within our project the daily stand-up time is 9:30 and since day 1, we have been following this method every day. Within the daily stand-up we discuss the progress of the prior day and the plans for today.  
+
+</details>
+
+---
+
+<details><summary>Solving issues </summary>
+
+Besides this, we discuss the issues that you’ve might encountered during your previous working day. If you are stuck or not sure what you should be doing next, we make sure to clear that up and make new working pairs. Usually when this happens there will be Teams calls after the stand-up to discuss or solve this problem with each other. This way the stand-ups won’t take longer than they should be.  
+
+</details>
+
+---
+
+<details><summary>Sprint planning </summary>
+
+Before holding our retrospective, we make sure to create a planning for the next sprint. During every sprint planning we, as a team, look at the current sprint on Jira. We discuss if we managed to complete the set sprint goal, if all the tasks are done, and what still must be done with the leftover tasks to complete them. The leftover tasks will be added to the new sprint. 
+
+Once the current sprint has been completed, we start the new sprint by specifying a goal for the new sprint. We usually look at the roadmap and what we have done the previous sprint to create a new goal. After agreeing as a team with the set goal, we have healthy discussions where everyone gets the chance to add new tickets to our backlog that will help achieve this goal.  
+
+</details>
+
+---
+
+<details><summary>Creation of the first sprint backlog </summary>
+
+The creation of our first sprint backlog was a bit hectic. The project was new for all of us and nobody knew where to start or what the exact planning was going to be. We still managed to create a backlog for the first sprint which was mainly focussed on research.  
+
+Annemieke from CBS provided us with lots of useful papers to research. A task during the first sprint was filtering out useful papers, this way we did not waste time by rereading unusable papers. As a team we all picked different subjects which we thought would be beneficial for our project and created 1 ticket with small subtasks in it. Besides the different papers we also received different CSV files which contained the data we had to work with during the project. We created a ticket to research these CSV files and document as much as possible.  
+
+</details>
+
+---
+
+<details><summary>Retrospectives</summary>
+
+After finishing a 2-week sprint we hold a retrospective to reflect and evaluate the process we’ve made over the past weeks. In these retrospectives we discuss what went well, what didn’t go well, what each team member longed for and the actions we’re going to take for the next sprint. During the retrospective we look back at the actions we wrote down from the previous sprint and see if we have worked on these actions. These retrospectives are a good tool to let every member on the team freely speak on how to feel about certain aspects over the last 2 weeks.  
+
+</details>
+
+---
+
+<details><summary>Project roles </summary>
+
+At the start of the project, we agreed on switching roles every sprint. This would mean a new scrum master, communicator and note taker every sprint. This did not go as planned, we decided to keep the same scrum master for the entire project to make sure the project went smoothly. The communicator role was switched halfway through the project and note taker role was done by the whole team. Every member wrote down what was important for them and after every important meeting we discussed the previous meeting to make sure everyone is on the same level.  
+
+##### *Extra addition*
+
+My role during the first 10 weeks of the project was the communicator. All communication between teachers and project owners was usually done by me. After these 10 weeks I took over the note taker role and wrote down all the information what could be useful for our project.
+
+</details>
+
+---
+
+<details><summary>Planning tool </summary>
+
+The infrastructure/tool we have been using for this is Jira. Jira is a plan, track and manage software that is mostly used for software development. Within the activPAL project Jira is not only used for software development but also for the research development from week 1.  
+
+</details>
+
+---
+
+<details><summary>Research questions </summary>
+
+The main research questions have been divided into smaller tasks called research sub tasks. Every sub research question has a few tasks that help to answer the question and guide us to the right approach to give an answer. By combining Jira with our sub questions, we can put all the sub questions into the Jira Road Map. This gives the whole group a good overview of the questions that still need to be answered and the tasks needed to answer the sub questions.
+
+</details>
 
 </details>
 
@@ -145,6 +319,13 @@ How can Machine Learning be used to determine whether people did their 150 minut
 - [Planning](Research%20Project/planning.md)
 
 # Predictive Analytics
+
+<details><summary></summary>
+
+
+
+</details>
+
 - [Selecting a Model](Predictive%20Analysis/selecting_a_model.md)
 - [Configuring a Model](Predictive%20Analysis/configuring_a_model.md)
 - [Training model](Predictive%20Analysis/training_a_model.md)
