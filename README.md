@@ -1171,7 +1171,7 @@ While writing a research paper it is important to have visualizations and tables
 |This notebook is the pre-processing for the Diceface experiment. I combined multiple data sets to get a dataframe containing all necessary rows for this experiment. | Colin|[open notebook](Images/Notebooks/diceface_experiment.py)|
 |All activities needed to be added to one file. This would speed up future notebooks. | Colin | [open notebook](Images/Notebooks/combine_correspondent_activities.py)|
 |Visualizing the lab measured activities.| Colin | [open notebook](Images/Notebooks/activity_distribution.py)|
-|This main dataframe was needed for the MET regression models.| Colin & Ali|[open notebook](Images/Notebooks/)|
+|This main dataframe was needed for the MET regression models.| Colin & Ali|[open notebook](Images/Notebooks/creating_main_dataframe.py)|
 |This notebook was created to get a better understanding about the calculation of MET.| Colin|[open notebook](Images/Notebooks/understanding_MET.py)|
 |Transforming Diceface values.| Mostly by Colin & Adnan, small additions by Matthew & Ali|[open notebook](Images/Notebooks/normalize_diceface_values-v3.py)|
 
