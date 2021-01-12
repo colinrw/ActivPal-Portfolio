@@ -1162,6 +1162,8 @@ While writing a research paper it is important to have visualizations and tables
 
 </details>
 
+---
+
 <details><summary>List of Notebooks</summary>
 
 |Explanation|Written by|Notebook|
