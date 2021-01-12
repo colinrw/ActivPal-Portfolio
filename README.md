@@ -1161,3 +1161,33 @@ While writing a research paper it is important to have visualizations and tables
 ---
 
 </details>
+
+<details><summary>List of Notebooks</summary>
+
+|Explanation|Written by|Notebook|
+|------------|--------|--------|
+|This notebook is the pre-processing for the Diceface experiment. I combined multiple data sets to get a dataframe containing all necessary rows for this experiment. | Colin|[open notebook](Images/Notebooks/diceface_experiment.py)|
+|All activities needed to be added to one file. This would speed up future notebooks. | Colin | [open notebook](Images/Notebooks/combine_correspondent_activities.py)|
+|Visualizing the lab measured activities.| Colin | [open notebook](Images/Notebooks/activity_distribution.py)|
+|This main dataframe was needed for the MET regression models.| Colin & Ali|[open notebook](Images/Notebooks/)|
+|This notebook was created to get a better understanding about the calculation of MET.| Colin|[open notebook](Images/Notebooks/understanding_MET.py)|
+|Transforming Diceface values.| Mostly by Colin & Adnan, small additions by Matthew & Ali|[open notebook](Images/Notebooks/normalize_diceface_values-v3.py)|
+
+Following notebooks are for the Random Forest and XGBoost Regression models
+
+|Activity|XGBoost|Random Forest|
+|------------|--------|--------|
+|Lopen|[open notebook](Images/Notebooks/predict_walking_met_XGBoost-updated.py)|[open notebook](Images/Notebooks/MET_walking_prediction_random_forest-updated.py)|
+|Rennen|[open notebook](Images/Notebooks/predict_running_met_XGBoost-updated.py)|[open notebook](Images/Notebooks/MET_cycling_light_prediction_random_forest-updated.py)|
+|Fietsen Licht|[open notebook](Images/Notebooks/predict_cycling_light_met_XGBoost-updated.py)|[open notebook](Images/Notebooks/MET_cycling_light_prediction_random_forest-updated.py)|
+|Fietsen Zwaar|[open notebook](Images/Notebooks/predict_cycling_heavy_met_XGBoost-updated.py)|[open notebook](Images/Notebooks/MET_cycling_heavy_prediction_random_forest-updated.py)|
+|Staan|[open notebook](Images/Notebooks/predict_standing_met_XGBoost-updated.py)|[open notebook](Images/Notebooks/MET_cycling_light_prediction_random_forest-updated.py)|
+|Zitten|[open notebook](Images/Notebooks/predict_sitting_met_XGBoost-updated.py)|[open notebook](Images/Notebooks/MET_cycling_light_prediction_random_forest-updated.py)|
+
+</details>
+
+<details><summary>Completed Scrum Tasks</summary>
+
+![](Images/scrum-activities.png)
+
+</details>
